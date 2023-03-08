@@ -1,186 +1,370 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Evera Documentation</title>
-    <meta name="description" content="A simple HTML/CSS DocumentationTemplate">
-    <meta name="author" content="Carlos Yllobre">
+  <meta charset="utf-8">
+  <title>Evera AI - Personalized Data CRM Platform</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <link rel="stylesheet" href="style.css?">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="icon" href="imgs/LogoEvera.png">
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
 </head>
-
 <body>
-
-    <div class="navbar clear nav-top">
-        <div class="row content">
-            <a href="#"><img class="logo" src="Logo.png"></a>
-            <a class="right" href="#"><i class="fas fa-book"></i>&nbsp; Documentation</a>
-            <a class="right" href="fawzi@evera.ai" target="_blank"><i class="fas fa-paper-plane"></i>&nbsp; fawzi@evera.ai</a>
-        </div>
+<div class="container-fluid">
+  <!-- Navigation bar  -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-down">
+    <a class="navbar-brand font-weight-bold logo-text" href="#"> <img src="imgs/LogoEvera.png" width="50" height="50" alt=""><p class="logo-text">EVERA </p></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active inv-color" href="#" style="color:#E3E4E8;">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link inv-color" style="color:#E3E4E8" target="_blank" rel="noopener noreferrer" href="https://fawzievera.github.io/Evera.docs/">Developers</a>
+        <a class="nav-item nav-link inv-color" style="color:#E3E4E8" href="#contact">Contact</a>
+      </div>
     </div>
-
-    <div class="container clear">
-        <div class="row wrapper">
-
-            <div class="sidepanel">
-
-                <a class="title" href="#">Introduction</a>
-
-                <a class="section" href="#">Supported Versions</a>
-                <a class="section" href="#">About this App</a>
-                <a class="section" href="#technology">Technology</a>
-
-                <div class="divider left"></div>
-
-                <a class="title" href="#gettingstarted">Getting Started</a>
-
-                <a class="section" href="#installingapp">Installing the App</a>
-                 <a class="section" href="#openingapp">Opening the App</a>
-
-                <div class="divider left"></div>
-
-                <a class="title" href="#basicfeatures">Basic Features</a>
-
-                <a class="section" href="#basicfeatures">Feature 1: Customer Demographic Information</a>
-                <a class="section" href="#basicfeatures">Feature 2: Financial Data</a>
-
-                <div class="divider left"></div>
-
-                <a class="title" href="#advanced">Advanced Features</a>
-
-                <a class="section" href="#advanced">Feature A: Past Real Estate Purchases</a>
-                <a class="section" href="#advanced">Feature B: Customer Interest Data</a>
-                <a class="section" href="#advanced">Feature C: Confidence Score</a>
-
-
-                <div class="divider left"></div>
-
-                <a class="title" href="#accesibility">Accesibility</a>
-
-                <div class="divider left"></div>
-
-                <a class="title" href="#moreinfo">More Info</a>
-
-             <div class="space double"></div>
-
-            </div>
-
-            <div class="right-col">
-
-
-
-                <h1 >Introduction</h1>
-
-                <p>Evera is a deep learning API that predicts the likelihood of a customer buying a house based on certain input features. The API utilizes state-of-the-art deep learning algorithms to analyze customer data and make informed predictions. Evera's predictions are based on a wide range of factors, including customer demographic information, financial data, and past real estate purchases. This API is designed for use by real estate companies and financial institutions that are looking to improve their marketing and sales efforts.</p>
-
-                <h2>Supported Versions:</h2>
-
-                <p><b>App Version 1.0.1.</b> App released date: February 10, 2023 (Alpha stage testing).</p>
-
-                <h2>About this App</h2>
-
-                <p id="technology"> The input features for the Evera API are the customer data that is used to make the prediction. These features include demographic information, financial data, and past real estate purchases. The demographic information includes information such as age, gender, marital status, and location. The financial data includes information such as income, expenses, and credit score. The past real estate purchases information includes information on the customer's past real estate purchases, such as the type of property they purchased, the location of the property, and the price of the property.</p>
-
-                <h2>Technology</h2>
-
-                <p>The primary technologies governing the CI/CD of this CRM are the following: Python, Django, ReactJS, HTML/CSS, and confidential affiliated programs and databases.<br>
-
-
-        <div class="divider" style="width:24%; margin:30px 0;"></div>
-
-                <h1>Getting Started</h1>
-
-                <h2>How to Use</h2>
-
-                <p>To use the Evera API, you need to have an API key, which can be obtained by signing up for an account on the Evera website. Once you have an API key, you can use it to make predictions by sending a request to the Evera API endpoint with the customer data as input. The API will then return the prediction and confidence score, which can be used to inform your sales and marketing efforts. It is important to note that the accuracy of the predictions made by the Evera API can be improved by regularly updating the customer data used as input.</p>
-
-                <p id="installingapp"><b>Important:</b> Please contact our team to ensure effective implementation and deployment.</p>
-
-
-                <h2>Install the App</h2>
-
-                <p>In order to use this app, the user must generate a API personal token, and integrate it with their application.</p>
-
-                   <ol>
-                    <li>
-                      Generate a API personal token.
-                    </li>
-                    <br>
-                    <li>
-                    Integrate with CRM (or use EveraCRM), contact our team for support in this step.
-                    </li>
-                    <br id="openingapp">
-                    <li>
-                     The CRM is usable now based on the respective plan and credits within the token.
-                    </li>
-                    <br>
-                </ol>
-
-
-            <div class="divider" style="width:24%; margin:30px 0;"></div>
-
-
-                <h1>Basic Features</h1>
-
-                <h2>Feature 1: Customer Demographic Information</h2>
-
-                <p id="basicfeatures">One of the key features of the Evera API is the ability to analyze customer demographic information. This feature allows the API to take into account important factors such as age, gender, marital status, and location, when making its predictions. The demographic information is used to build a comprehensive profile of each customer, which is then used to make informed predictions on their likelihood of buying or selling a house. This feature is crucial in helping real estate companies and financial institutions target the right customers with their marketing and sales efforts.
-                </p>
-
-                <h2>Feature 2: Financial Data</h2>
-
-                <p>Another important feature of the Evera API is the analysis of customer financial data. This feature allows the API to take into account factors such as income, expenses, and credit score, when making its predictions. The financial data provides valuable insight into a customer's ability to buy or sell a house, and is used to make more accurate predictions on their likelihood of taking such action. This feature is particularly important for financial institutions looking to make loan decisions or offer mortgage products.</p>
-
-                <div class="divider" style="width:24%; margin:30px 0;"></div>
-
-                <h1>Advanced Features</h1>
-
-                <h2>Feature A: Past Real Estate Purchases</h2>
-
-                <p>The Evera API also takes into account a customer's past real estate purchases when making its predictions. This feature allows the API to analyze important factors such as the type of property the customer has purchased in the past, the location of the property, and the price of the property. The past real estate purchases information provides valuable insight into a customer's real estate preferences and buying behavior, which is used to make more informed predictions on their likelihood of buying or selling a house.</p>
-
-                <h2>Feature B: Customer Interest Data</h2>
-
-                <p>The Evera API also takes into account a customer's interest data when making its predictions. This feature allows the API to analyze factors such as the types of houses the customer has shown interest in, the locations of those houses, and the prices of those houses. The customer interest data provides valuable insight into a customer's real estate preferences and buying behavior, which is used to make more informed predictions on their likelihood of buying or selling a house.</p>
-
-                <h2>Feature C: Confidence Score</h2>
-
-                <p>Finally, the Evera API also provides a confidence score with each prediction it makes. This score represents the probability that the prediction is accurate, and is calculated based on the strength of the input features and the accuracy of the deep learning algorithms used by the API. The confidence score allows real estate companies and financial institutions to make more informed decisions based on the predictions made by the Evera API, and to prioritize their sales and marketing efforts accordingly.</p>
-
-
-                <div class="divider" style="width:24%; margin:30px 0;"></div>
-
-                   <h1>Impact</h1>
-
-                   <p>The Evera API is a powerful tool for real estate companies and financial institutions that are looking to improve their sales and marketing efforts. The API utilizes state-of-the-art deep learning algorithms to analyze customer data and make informed predictions on whether customers are likely to buy a house or not. The API is easy to use and provides a high level of accuracy, making it a valuable asset for companies looking to optimize their sales and marketing efforts.</p>
-
-                <div class="divider" style="width:24%; margin:30px 0;"></div>
-
-                <h1>More Info</h1>
-
-                <p>This app is protected by intellectual property rights. For a scaled personalized enterprise edition, please contact our team.</p>
-                <p> See our policies on the <a href="terms.html">terms and conditions</a> page.
-                <div class="doublespace"></div>
-                <div class="divider" style="width:24%; margin:30px 0;"></div>
-
-
-            </div>
-
-        </div>
-
+  </nav>
+  <!-- Navigation bar -->
+
+  <!-- Hero banner  -->
+  <div class="jumbotron jumbo-1 vertical-center" style="background:none;">
+    <div class="container">
+      <div class="col-lg">
+      <h1 class="display-4 text-center" style="color:#918CED">Build Smart Buyer Relations</h1>
+      <p class="lead motto-subtext text-center">Stop predicting the price of a volatile housing market using risky models. Evera models the price of a customer’s relation using a <u> substantially more reliable</u>* human-centric model.</p>
+    </div>
+      <div class="text-center">
+      <button class="join-discord btn-border btn-round color-3 material-design" style="color:#E3E4E8;" onclick="window.open('https://discord.com/invite/aW4Ysje3vv');">Join our community using and building the buyer prediction model CRM on Discord</button>
 
     </div>
+    </div>
+  </div>
+  <!-- Hero banner  -->
 
+<!-- First feature page -->
+  <div class="jumbotron jumbo-2 vertical-center" style="background:none;">
+    <div class="container">
+      <div class="row">
+            <div class="col-sm">
+      <h1 class="display-4" style="color:#E3E4E8">Build Smart Buyer Relations</h1>
+      <p class="lead motto-subtext">Stop predicting the price of a volatile housing market using risky models. Evera models the price of a customer’s relation using a <u> substantially more reliable</u>* human-centric model.</p>
 
+    </div>
+        <div class="col-sm">
+          <img src="imgs/double-helix.png" style="width: 100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- First feature page -->
+
+      <!-- Second feature page -->
+      <div class="jumbotron vertical-center" style="background:none;" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="text-center">
+              <img src="imgs/wireframe-sphere.png" class="features-icon">
+            </div>
+            <h2 style="color:#E3E4E8;">1,000,000+ Data Points</h2>
+              <br>
+              <p style="color:#E3E4E8;">
+              Precise and personalized human data gives reliable predictions of outcome with prospective home buyers to eliminate guess work.
+</p>
+          </div>
+          <div class="col-sm">
+            <div class="text-center">
+            <img src="imgs/hexagonal-beehive.png" class="features-icon">
+          </div>
+          <h2 style="color:#E3E4E8;">27+ API Integrations</h2>
+            <br>
+            <p style="color:#E3E4E8;">
+            Integrate into any system without the model clutter by using our language transformer ML layer.
+          </p>
+          </div>
+            <div class="col-sm">
+              <div class="text-center">
+              <img src="imgs/twisted-torus.png" class="features-icon">
+            </div>
+            <h2 style="color:#E3E4E8;">0.001s API Call Time</h2>
+              <br>
+              <p style="color:#E3E4E8;">
+              Continuous 24/7, 100% uptime with 0.001s REST call speeds.
+            </p>
+            </div>
+          </div>
+            </div>
+      </div>
+      <!-- Second feature page -->
+
+<!-- Third feature page -->
+<div class="jumbotron jumbo-2 vertical-center" style="background:none;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <img src="imgs/wireframe-sphere.png" style="width: 100%;">
+  </div>
+          <div class="col-sm">
+    <h1 class="display-4" style="color:#E3E4E8;">Build Smart Buyer Relations</h1>
+    <p class="lead motto-subtext">Stop predicting the price of a volatile housing market using risky models. Evera models the price of a customer’s relation using a <u> substantially more reliable</u>* human-centric model.</p>
+    <pre><code class="python">❯ curl -X GET "http://everaai.pythonanywhere.com/"
+</code></pre>
+  </div>
+
+  </div>
+  </div>
+</div>
+
+<!-- First feature page -->
+  <div class="jumbotron jumbo-2 vertical-center" style="background:none;">
+    <div class="container">
+      <div class="row">
+            <div class="col-sm">
+      <h1 class="display-4" style="color:#E3E4E8">Build Smart Buyer Relations</h1>
+      <p class="lead motto-subtext">Stop predicting the price of a volatile housing market using risky models. Evera models the price of a customer’s relation using a <u> substantially more reliable</u>* human-centric model.</p>
+
+    </div>
+        <div class="col-sm">
+          <img src="imgs/double-helix.png" style="width: 100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+      <!-- Third feature page -->
+
+      <div class="faq_area section_padding_130" id="faq">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-12 col-sm-8 col-lg-6">
+                      <!-- Section Heading-->
+                      <pre><code class="hljs language-js">let x = 1;</code></pre>
+
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <!-- FAQ Area-->
+                  <div class="col-12 col-sm-10 col-lg-8">
+                      <div class="accordion faq-accordian" id="faqAccordion">
+                          <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                              <div class="card-header" id="headingOne">
+                                  <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:#0E1015;">How can I install this app?<span class="lni-chevron-up"></span></h6>
+                              </div>
+                              <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                                  <div class="card-body">
+                                      <p style="color:#0E1015;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.</p>
+                                      <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card border-0 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                              <div class="card-header" id="headingTwo">
+                                  <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="color:#0E1015;">The apps isn't installing?<span class="lni-chevron-up"></span></h6>
+                              </div>
+                              <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                  <div class="card-body">
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.</p>
+                                      <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card border-0 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                              <div class="card-header" id="headingThree">
+                                  <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="color:#0E1015;">Contact form isn't working?<span class="lni-chevron-up"></span></h6>
+                              </div>
+                              <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                                  <div class="card-body">
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.</p>
+                                      <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Contact page -->
+      <div class="jumbotron vertical-center" style="background:none;">
+        <div class="container">
+          <h1 class="display-4 text-center get-in-touch" style="color:#E3E4E8;">Get in touch with us at <a href="mailto:info@evera.ai" class="in-touch-gmail" style="color:#918CED;">info@evera.ai</a></h1>
+        </div>
+      </div>
+      <!-- Contact page -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-dark text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom text-light">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright: Evera AI
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <link href="https://unpkg.com/highlightjs-badge/highlightjs/styles/vs2015.css" rel="stylesheet">
+  <script src="https://unpkg.com/highlightjs-badge/highlightjs/highlight.pack.js"></script>
+
+  <script src="https://unpkg.com/highlightjs-badge/highlightjs-badge.min.js"></script>
+  <script>
+      setTimeout(function () {
+          var pres = document.querySelectorAll("pre>code");
+          for (var i = 0; i < pres.length; i++) {
+              hljs.highlightBlock(pres[i]);
+          }
+          var options = {
+              contentSelector: ".container",
+              // Delay in ms used for `setTimeout` before badging is applied
+              // Use if you need to time highlighting and badge application
+              // since the badges need to be applied afterwards.
+              // 0 - direct execution (ie. you handle timing
+              loadDelay:0,
+
+              // CSS class(es) used to render the copy icon.
+              copyIconClass: "fa fa-copy",
+              // CSS class(es) used to render the done icon.
+              checkIconClass: "fa fa-check text-success",
+
+              // hook to allow modifying the text before it's pasted
+              onBeforeTextCopied: function(text, codeElement) {
+                return text;   //  you can fix up the text here
+              }
+          };
+          window.highlightJsBadge(options);
+      },10);
+  </script>
 </body>
-
 </html>

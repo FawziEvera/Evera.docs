@@ -1,0 +1,227 @@
+@font-face {
+  font-family: roboto-regular;
+	src: url('../font/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: oxanium-bold;
+	src: url('../font/Oxanium/static/Oxanium-Bold.ttf');
+}
+@font-face {
+  font-family: oxanium-regular;
+	src: url('../font/Oxanium/static/Oxanium-Regular.ttf');
+}
+
+@font-face {
+  font-family: roboto-bold;
+  src: url('../font/Roboto/Roboto-Bold.ttf');
+}
+
+body {
+  font-family: 'roboto-bold', serif;
+  background-color: #0E1015;
+}
+.motto-subtext {
+  font-family: 'roboto-regular', serif;
+  color: #E3E4E8;
+}
+.inv-color {
+  color: #E3E4E8;
+}
+.features-icon {
+  height: 200px;
+  opacity: .75;
+}
+.navbar-down {
+  margin-top:1%;
+}
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  display: flex;
+  align-items: center;
+}
+.jumbo-1 {
+  min-height: 70vh;
+}
+.jumbo-2 {
+  min-height: 60vh;
+}
+.navbar-nav {
+  float:none;
+  margin:0 auto;
+  text-align: center;
+}
+
+.navbar-nav > a {
+  display: inline-block;
+  margin-right: 75px;
+  float:none;
+}
+.logo-text {
+  letter-spacing: 0.3em;
+  font-family: "oxanium-regular", serif;
+  color:#918CED;
+  display:inline;
+  white-space:nowrap;
+}
+.join-us {
+  font-family: 'roboto-regular', serif;
+  border: 1px solid black;
+  border-radius: 30%;
+  width: auto;
+}
+
+.join-discord {
+  border: none;
+  font-family: 'roboto-regular', serif;
+  overflow: hidden;
+  margin: 1rem;
+  color: #53545d;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: auto;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #D1CEE6;
+  border-radius: 10em;
+}
+.join-discord:active {
+ outline: none;
+ ie-dummy: expression(this.hideFocus=true);
+}
+.join-discord:focus{
+  outline: none;
+  ie-dummy: expression(this.hideFocus=true);
+}
+.get-in-touch {
+  font-family: "roboto-regular", serif;
+}
+.in-touch-gmail:link { text-decoration: none; }
+.in-touch-gmail:visited { text-decoration: none; }
+.in-touch-gmail:hover { text-decoration: none; }
+.in-touch-gmail:active { text-decoration: none; }
+
+#blurredBackgroundContainer{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   display:block;
+   overflow:hidden
+}
+#blurredBackground{
+   position:absolute;
+   top:-5%;
+   left:-5%;
+   display:block;
+   min-width:110%;
+   min-height:110%;
+   filter:blur(99px);
+   -webkit-filter:blur(99px)
+}
+#contentContainer{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   display:block;
+   overflow:scroll
+}
+.color-blur{
+   width:200%;
+   height:150%;
+   display:block;
+   position:absolute;
+   border-radius:50%
+}
+
+
+
+
+body{margin-top:20px;}
+.section_padding_130 {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+.faq_area {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.faq-accordian {
+    position: relative;
+    z-index: 1;
+}
+.faq-accordian .card {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1.5rem;
+}
+.faq-accordian .card:last-child {
+    margin-bottom: 0;
+}
+.faq-accordian .card .card-header {
+    background-color: #c7c7c7;
+    padding: 0;
+    border-bottom-color: #ebebeb;
+}
+.faq-accordian .card .card-header h6 {
+    cursor: pointer;
+    padding: 1.75rem 2rem;
+    color: #3f43fd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.faq-accordian .card .card-header h6 span {
+    font-size: 1.5rem;
+}
+.faq-accordian .card .card-header h6.collapsed {
+    color: #070a57;
+}
+.faq-accordian .card .card-header h6.collapsed span {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.faq-accordian .card .card-body {
+    padding: 1.75rem 2rem;
+}
+.faq-accordian .card .card-body p:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 575px) {
+    .support-button p {
+        font-size: 14px;
+    }
+}
+
+.support-button i {
+    color: #3f43fd;
+    font-size: 1.25rem;
+}
+@media only screen and (max-width: 575px) {
+    .support-button i {
+        font-size: 1rem;
+    }
+}
+
+.support-button a {
+    text-transform: capitalize;
+    color: #2ecc71;
+}
+@media only screen and (max-width: 575px) {
+    .support-button a {
+        font-size: 13px;
+    }
+}
