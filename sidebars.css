@@ -1,0 +1,52 @@
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: fixed;
+  z-index: 1;
+}
+
+.sentiment-question:hover {
+  padding-top: 20px;
+  padding-bottom:20px;
+  background: rgb(0,221,177);
+  background: linear-gradient(90deg, rgba(65,28,225,1) 0%, rgba(0,221,177,1) 100%);
+  font-weight: bold;
+}
+.num-question:hover {
+  font-weight: bold;
+  background: #0a363c;
+}
+.metadata-question:hover{
+  font-weight:bold;
+  background: rgb(65,28,225);
+}
+main {
+  margin-left: 400px;
+  margin-right:100px;
+  padding: 0px 10px;
+  height:100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+}
+.box {
+}
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
